@@ -13,3 +13,9 @@ Instalar Intel Haxm: https://github.com/intel/haxm/releases/tag/v7.7.1
 
 # Documentação React Native:
 https://reactnative.dev/docs/typescript
+
+#Criação de projeto usando typescript
+Tutorial disponível em: https://reactnative.dev/docs/typescript
+
+#Debugging
+
