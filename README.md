@@ -15,11 +15,10 @@ Instalar Intel Haxm: https://github.com/intel/haxm/releases/tag/v7.7.1
 https://reactnative.dev/docs/typescript
 
 # Execução do projeto
-
 Execução do projeto via scripts no package.json
 
-* Scripts
-< npm run start >: Iniciar o Metro Bundler, responsável pelo empacotamento da aplicação, no modo debug 
+* Scripts:
+< npm run start >: Iniciar o Metro Bundler, responsável pelo empacotamento da aplicação, no modo debug.
 
 # Debugging
 
