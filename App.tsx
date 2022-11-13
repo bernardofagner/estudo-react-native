@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { styles } from './AppStyles';
+import {styles} from './AppStyles';
 
 const Section: React.FC<
   PropsWithChildren<{

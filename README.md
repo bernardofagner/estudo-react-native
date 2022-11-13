@@ -37,3 +37,12 @@ Erro ao executar o app pela primeira vez: É necessário aceitar as licenças do
 ou
 
 https://droidrant.com/how-do-i-fix-unknown-license-on-android/
+
+# Extensões recomendadas
+
+ESLint
+Editor config
+Git Lens
+Material Icon Theme
+Back & Forth
+Rainbow Brackets
