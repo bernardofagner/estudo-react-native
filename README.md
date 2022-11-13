@@ -30,4 +30,10 @@ Scripts:
 O arquivo 'index.js', na raiz do diretório do projeto, é responsável por registrar o componente principal App.tsx para que ele seja executado ao iniciar o sistema.
 
 
+# Troubleshooting
 
+Erro ao executar o app pela primeira vez: É necessário aceitar as licenças do SDK. Solução disponível em: https://www.kindacode.com/article/react-native-please-accept-all-necessary-android-sdk-licenses/#Using_Android_Studio
+
+ou
+
+https://droidrant.com/how-do-i-fix-unknown-license-on-android/
