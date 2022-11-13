@@ -17,7 +17,8 @@ https://reactnative.dev/docs/typescript
 # Execução do projeto
 Execução do projeto via scripts no package.json
 
-* Scripts:
+Scripts:
+
 < npm run start >: Iniciar o Metro Bundler, responsável pelo empacotamento da aplicação, no modo debug.
 
 < npm run android > || < yarn android >: Inicia a execução da aplicação. A partir desteponto será possível abrí-la em um emulador android ou em um dispositivo físico realizando a conexão via leitura de QR code para uma interação wireless ou via conexão USB.
