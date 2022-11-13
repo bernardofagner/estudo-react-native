@@ -40,9 +40,14 @@ https://droidrant.com/how-do-i-fix-unknown-license-on-android/
 
 # Extensões recomendadas
 
-ESLint &nbsp
+ESLint
+
 Editor config
+
 Git Lens
+
 Material Icon Theme
+
 Back & Forth
+
 Rainbow Brackets
