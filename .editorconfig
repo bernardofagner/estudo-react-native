@@ -1,6 +1,6 @@
 root = true
 
-ident_size = 2
+ident_size = 4
 ident_style = space
 charset = utf-8
 trim_trailing_whitespace = true
