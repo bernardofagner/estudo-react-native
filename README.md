@@ -19,11 +19,16 @@ Execução do projeto via scripts no package.json
 
 Scripts:
 
-< npm run start >: Iniciar o Metro Bundler, responsável pelo empacotamento da aplicação, no modo debug.
+01 - < npm run start >: Iniciar o Metro Bundler, responsável pelo empacotamento da aplicação, no modo debug.
 
-< npm run android > || < yarn android >: Inicia a execução da aplicação. A partir desteponto será possível abrí-la em um emulador android ou em um dispositivo físico realizando a conexão via leitura de QR code para uma interação wireless ou via conexão USB.
+02 - < npm run android > || < yarn android >: Inicia a execução da aplicação. A partir desteponto será possível abrí-la em um emulador android ou em um dispositivo físico realizando a conexão via leitura de QR code para uma interação wireless ou via conexão USB.
 
 # Debugging
+
+1 - Inicializar/carregar o emulador, via Android Studio (recomendação pessoal) ou pelo Script 02;
+2 - Executar o Metro Bundler para ter acesso às opções de desenvolvedor, conforme Script 01;
+
+No terminao do metro bundle, pressione a tecla 'd' para exibir um menu de opções. No menu que aparecer, selecione a opção 'debug' para abrir uma janela em seu navegador e depurar seu app como se fosse uma aplicação web, tendo acesso aos elementos, console, source e network.
 
 # Informativo
 
