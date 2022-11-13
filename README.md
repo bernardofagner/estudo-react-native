@@ -40,7 +40,7 @@ https://droidrant.com/how-do-i-fix-unknown-license-on-android/
 
 # Extensões recomendadas
 
-ESLint
+ESLint &nbsp
 Editor config
 Git Lens
 Material Icon Theme
