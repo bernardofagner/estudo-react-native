@@ -1,65 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
-import React, { type PropsWithChildren } from 'react';
 import {
     SafeAreaView,
     ScrollView,
     StatusBar,
-    Text,
     useColorScheme,
-    View,
 } from 'react-native';
 
 import {
-    Colors,
-    DebugInstructions,
-    Header,
-    LearnMoreLinks,
-    ReloadInstructions,
+    Colors
 } from 'react-native/Libraries/NewAppScreen';
 
-import { styles } from './AppStyles';
-
-const Section: React.FC<
-    PropsWithChildren<{
-        title: string;
-    }>
-> = ({ children, title }) => {
-    const isDarkMode = useColorScheme() === 'dark';
-    return (
-        <View style={styles.sectionContainer}>
-            <Text
-                style={[
-                    styles.sectionTitle,
-                    {
-                        color: isDarkMode ? Colors.white : Colors.black,
-                    },
-                ]}>
-                {title}
-            </Text>
-            <Text
-                style={[
-                    styles.sectionDescription,
-                    {
-                        color: isDarkMode ? Colors.light : Colors.dark,
-                    },
-                ]}>
-                {children}
-            </Text>
-        </View>
-    );
-};
+import { Home } from './src/features/Home/Home';
 
 const App = () => {
-    console.log('Rodando');
     const isDarkMode = useColorScheme() === 'dark';
 
     const backgroundStyle = {
@@ -67,35 +19,19 @@ const App = () => {
     };
 
     return (
-        <SafeAreaView style={backgroundStyle}>
+        <SafeAreaView>
+
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
                 backgroundColor={backgroundStyle.backgroundColor}
             />
-            <ScrollView
-                contentInsetAdjustmentBehavior="automatic"
-                style={backgroundStyle}>
-                <Header />
-                <View
-                    style={{
-                        backgroundColor: isDarkMode ? Colors.black : Colors.white,
-                    }}>
-                    <Section title="Step One Fagner">
-                        Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-                        screen and then come back to see your edits.
-                    </Section>
-                    <Section title="See Your Changes">
-                        <ReloadInstructions />
-                    </Section>
-                    <Section title="Debug">
-                        <DebugInstructions />
-                    </Section>
-                    <Section title="Learn More">
-                        Read the docs to discover what to do next:
-                    </Section>
-                    <LearnMoreLinks />
-                </View>
+
+            <ScrollView>
+                <Home nome='Fagner de Oliveira Bernardo' >
+                    <Home nome='Elemento filho (children)'/>
+                </Home>
             </ScrollView>
+
         </SafeAreaView>
     );
 };

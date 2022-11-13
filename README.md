@@ -56,3 +56,5 @@ Material Icon Theme
 Back & Forth
 
 Rainbow Brackets
+
+Jest Runner
