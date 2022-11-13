@@ -26,9 +26,10 @@ Scripts:
 # Debugging
 
 1 - Inicializar/carregar o emulador, via Android Studio (recomendação pessoal) ou pelo Script 02;
+
 2 - Executar o Metro Bundler para ter acesso às opções de desenvolvedor, conforme Script 01;
 
-No terminao do metro bundle, pressione a tecla 'd' para exibir um menu de opções. No menu que aparecer, selecione a opção 'debug' para abrir uma janela em seu navegador e depurar seu app como se fosse uma aplicação web, tendo acesso aos elementos, console, source e network.
+3 - No terminao do metro bundle, pressione a tecla 'd' para exibir um menu de opções. No menu que aparecer, selecione a opção 'debug' para abrir uma janela em seu navegador e depurar seu app como se fosse uma aplicação web, tendo acesso aos elementos, console, source e network.
 
 # Informativo
 
