@@ -59,3 +59,43 @@ Back & Forth
 Rainbow Brackets
 
 Jest Runner
+
+# Modelo de check list de desenvolvimento
+# Descrição
+De forma suscinta, clara e objetiva, descreva o requisito implementado.
+
+## Informativo
+1. Princípios clean code (https://www.hostgator.com.br/blog/clean-code-o-que-e/)
+2. Princípios SOLID (https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
+
+## Checklist (Desenvolvedor)
+1. [ ] Entendimento de Us realizado
+2. [ ] Confirmação do entendimento da US realizado
+3. [ ] Existe roteiro de testes
+4. [ ] Desenvolvimento da US realizado em branch de feature
+5. [ ] Desenvolvimento realizado de acordo com critérios de aceitação
+6. [ ] Código de manipulação de dados (não react states) estão nos hooks
+7. [ ] Foram implementados testes unitários para elementos testáveis (hooks, utils)
+8. [ ] Existem testes unitários desenvolvidos para todos os possíveis fluxos/cenários
+9. [ ] Existem testes unitários simulando cenários de sucesso
+10. [ ] Existem testes unitários simulando cenários de falha/exceção (se aplicável)
+11. [ ] Testes unitários possuem verificações (Asserts) coerentes/relevantes
+12. [ ] Código fonte atende os critérios do Sonar (Cobertura, codesmells, bugs...)
+13. [ ] Validação em dupla realizada em ambiente local
+14. [ ] Validação de design realizada em ambiente local
+15. [ ] Validação em dupla realizada em ambiente remoto
+16. [ ] Validação de design realizada em ambiente remoto
+17. [ ] Estória de usuário validada no Chrome
+18. [ ] Estória de usuário validada no Firefox
+19. [ ] Todos os itens do check list dos avaliadores foram atendidos
+
+## Checklist (Avaliadores do PR)
+1. [ ] PR aprovado por mais de 1 (um) avaliador
+2. [ ] PR aberto do branch de origem para o branch de destino correto
+3. [ ] Comentários do PR resolvidos
+4. [ ] Padrão de desenvolvimento adotado pelo time foi seguido
+5. [ ] Funções ECMA Script escritas no padrão camelCase
+6. [ ] Métodos públicos escritos em PascalCase e privados escritos em camelCase
+7. [ ] Princípios SOLID aplicados corretamente
+8. [ ] Princípios de clean code aplicados corretamente
+9. [ ] Todos os itens do check list do desenvolvedor foram atendidos
