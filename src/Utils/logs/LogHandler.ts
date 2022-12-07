@@ -21,9 +21,13 @@ class LogHandler {
 
     public trackEvent({sourceFile ,info, data = {}}: DataLog): void {
 
-        if (this.logEnvironment === LogEnvironment.Development) {
-            const logDate = new Date();
-            console.log(`${logDate} \n${sourceFile} - ${info}\n${JSON.stringify(data)}`);
+        switch(this.logEnvironment) {
+            case LogEnvironment.Development: {
+                const logDate = new Date();
+                console.log(`${logDate} \n${sourceFile} - ${info}\n${JSON.stringify(data)}`);
+            }
+            case LogEnvironment.Production: { }
+            default: { }
         }
     }
 }
