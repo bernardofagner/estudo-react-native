@@ -11,6 +11,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { Home } from './src/features/Home/Home';
+import { LogHandler } from './src/Utils/logs/LogHandler';
 
 const App = () => {
 
@@ -19,9 +20,14 @@ const App = () => {
         backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     };
 
+    const logDataSample = {
+        nome: 'Fagnerde Oliveira Bernardo',
+        idade: 33
+    }
+
     return (
         <>
-            {console.log('App is running...')}
+            {LogHandler.trackEvent({sourceFile: 'App', info: 'Mensagem de erro', data: logDataSample})}
             <View style={styles.container}>
                 <StatusBar
                     barStyle={isDarkMode ? 'light-content' : 'dark-content'}
