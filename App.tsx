@@ -20,16 +20,19 @@ const App = () => {
     };
 
     return (
-        <View style={styles.container}>
-            <StatusBar
-                barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-                backgroundColor={backgroundStyle.backgroundColor}
-            />
+        <>
+            {console.log('App is running...')}
+            <View style={styles.container}>
+                <StatusBar
+                    barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+                    backgroundColor={backgroundStyle.backgroundColor}
+                />
 
-            <Home nome='Fagner de Oliveira Bernardo' >
-                <Home nome='Elemento filho (children)' />
-            </Home>
-        </View>
+                <Home nome='Fagner de Oliveira Bernardo' >
+                    <Home nome='Elemento filho (children)' />
+                </Home>
+            </View>
+        </>
     );
 };
 
