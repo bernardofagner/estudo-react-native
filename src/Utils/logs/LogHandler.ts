@@ -1,9 +1,5 @@
 import { AppConfig } from "../../Config/AppConfigs";
-
-export enum LogEnvironment {
-    Development = 'Development',
-    Production = 'Production'
-}
+import { LogEnvironment } from "../enums/LogEnvironment";
 
 interface DataLog {
     sourceFile: string,
@@ -24,7 +20,7 @@ class LogHandler {
         switch(this.logEnvironment) {
             case LogEnvironment.Development: {
                 const logDate = new Date();
-                console.log(`${logDate} \n${sourceFile} - ${info}\n${JSON.stringify(data)}`);
+                console.log(`${logDate}] \n[${sourceFile}]-[${info}]\n${JSON.stringify(data)}`);
             }
             case LogEnvironment.Production: { }
             default: { }

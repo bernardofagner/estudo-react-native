@@ -1,4 +1,4 @@
-import { LogEnvironment } from "../Utils/logs/LogHandler";
+import { LogEnvironment } from "../Utils/enums/LogEnvironment";
 
 class AppConfig {
 

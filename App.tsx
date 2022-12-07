@@ -27,7 +27,7 @@ const App = () => {
 
     return (
         <>
-            {LogHandler.trackEvent({sourceFile: 'App', info: 'Mensagem de erro', data: logDataSample})}
+            {LogHandler.trackEvent({sourceFile: 'App', info: 'Menagem de erro de exemplo', data: logDataSample})}
             <View style={styles.container}>
                 <StatusBar
                     barStyle={isDarkMode ? 'light-content' : 'dark-content'}
