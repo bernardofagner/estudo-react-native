@@ -1,9 +1,10 @@
 import {
-    SafeAreaView,
-    ScrollView,
+    View,
     StatusBar,
     useColorScheme,
 } from 'react-native';
+
+import { styles } from './AppStyles';
 
 import {
     Colors
@@ -12,27 +13,23 @@ import {
 import { Home } from './src/features/Home/Home';
 
 const App = () => {
-    const isDarkMode = useColorScheme() === 'dark';
 
+    const isDarkMode = useColorScheme() === 'dark';
     const backgroundStyle = {
         backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     };
 
     return (
-        <SafeAreaView>
-
+        <View style={styles.container}>
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
                 backgroundColor={backgroundStyle.backgroundColor}
             />
 
-            <ScrollView>
-                <Home nome='Fagner de Oliveira Bernardo' >
-                    <Home nome='Elemento filho (children)'/>
-                </Home>
-            </ScrollView>
-
-        </SafeAreaView>
+            <Home nome='Fagner de Oliveira Bernardo' >
+                <Home nome='Elemento filho (children)' />
+            </Home>
+        </View>
     );
 };
 
