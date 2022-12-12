@@ -4,11 +4,9 @@ import {
     useColorScheme,
 } from 'react-native';
 
-import { styles } from './AppStyles';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-import {
-    Colors
-} from 'react-native/Libraries/NewAppScreen';
+import { styles } from './AppStyles';
 
 import { Home } from './src/features/Home/Home';
 import { LogHandler } from './src/Utils/logs/LogHandler';
@@ -27,7 +25,7 @@ const App = () => {
 
     return (
         <>
-            {LogHandler.trackEvent({sourceFile: 'App', info: 'Menagem de erro de exemplo', data: logDataSample})}
+            {LogHandler.trackEvent({ sourceFile: 'App', info: 'Menagem de erro de exemplo', data: logDataSample })}
             <View style={styles.container}>
                 <StatusBar
                     barStyle={isDarkMode ? 'light-content' : 'dark-content'}

@@ -1,5 +1,5 @@
 import { AppConfig } from "../../Config/AppConfigs";
-import { LogEnvironment } from "../enums/LogEnvironment";
+import { AppEnvironments } from "../enums/LogEnvironment";
 
 interface DataLog {
     sourceFile: string,
@@ -9,24 +9,40 @@ interface DataLog {
 
 class LogHandler {
 
-    private logEnvironment: LogEnvironment;
+    private logEnvironment: AppEnvironments;
     
-    constructor(logEnvironment: LogEnvironment) {
+    constructor(logEnvironment: AppEnvironments) {
         this.logEnvironment = logEnvironment
     }
 
-    public trackEvent({sourceFile ,info, data = {}}: DataLog): void {
-
+    public trackEvent({sourceFile , info, data = {}}: DataLog): void {
+        
         switch(this.logEnvironment) {
-            case LogEnvironment.Development: {
-                const logDate = new Date();
-                console.log(`${logDate}] \n[${sourceFile}]-[${info}]\n${JSON.stringify(data)}`);
+            case AppEnvironments.Development: {                
+                this.logDevelopmentEvent({sourceFile, info, data});
+                break;
             }
-            case LogEnvironment.Production: { }
+            case AppEnvironments.Production: {
+                this.persistPrdEvent('Log PRD');
+                break;
+            }
             default: { }
         }
     }
+
+    private logDevelopmentEvent = ({sourceFile ,info, data = {}}: DataLog): void => {
+        const logDate = new Date();
+        const lineSeparator: string = '--------------------------------------------------------------------------\n';
+        const logMessage = `${logDate}]\n[${sourceFile}]-[${info}]\nPayload: ${JSON.stringify(data)}`;
+        const logFullMessage: string = lineSeparator + logMessage;
+
+        AppConfig.ShowLogDevelopment && console.log(logFullMessage);
+    }
+
+    public persistPrdEvent = (eventName: string): void => {
+        console.log(`Evento <${eventName}> persistido com sucesso!`);
+    }
 }
 
-const instance = new LogHandler(AppConfig.LogConfig.environment);
+const instance = new LogHandler(AppConfig.Environment);
 export {instance as LogHandler };

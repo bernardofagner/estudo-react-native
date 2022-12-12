@@ -1,10 +1,8 @@
-import { LogEnvironment } from "../Utils/enums/LogEnvironment";
+import { AppEnvironments } from "../Utils/enums/LogEnvironment";
 
 class AppConfig {
-
-    static LogConfig = {
-        environment: LogEnvironment.Development
-    }
+    static Environment = AppEnvironments.Development;
+    static ShowLogDevelopment = true;
 }
 
 export { AppConfig };
