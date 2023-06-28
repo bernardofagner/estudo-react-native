@@ -60,6 +60,8 @@ Rainbow Brackets
 
 Jest Runner
 
+Git Graph
+
 # Modelo de check list de desenvolvimento
 # Descrição
 De forma suscinta, clara e objetiva, descreva o requisito implementado.
